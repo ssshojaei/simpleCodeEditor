@@ -1,0 +1,28 @@
+{
+  "name": "simpleeditor",
+  "version": "1.0.0",
+  "description": "simple code editor with electronjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js"
+  },
+  "keywords": [],
+  "author": "SSShojaei",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "codemirror": "^5.48.2",
+    "electron": "^5.0.7",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssshojaei/simpleCodeEditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssshojaei/simpleCodeEditor/issues"
+  },
+  "homepage": "https://github.com/ssshojaei/simpleCodeEditor#readme"
+}

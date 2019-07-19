@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Code Editor</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="./node_modules/codemirror/theme/pastel-on-dark.css">
+    <script src="./node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="./node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <style>
+    div::-webkit-scrollbar {     
+        width: .8em
+    }
+
+    div::-webkit-scrollbar-thumb:window-inactive,
+    div::-webkit-scrollbar-thumb {
+            background:  rgba(0, 0, 0, 0.3)
+    }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="row w-100">
+            <div class="col">
+                <span class="navbar-brand">Simple Editor</span>
+            </div>
+            <div class="col text-right">
+                <div class="btn-group">
+                    <button id="open" class="btn btn-outline-info">open File</button>
+                    <button id="save" class="btn btn-outline-success">save File</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <textarea id="editor"></textarea>
+        <div class="row">
+            <div class="col">
+                <span class="small text-secondary" id="location">
+                    file not found!
+                </span>
+            </div>
+            <div class="col text-right">
+                <span class="small text-secondary">
+                    fileType: <span id="fileType">---</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="./render.js"></script>
+</body>
+</html>
